@@ -5,16 +5,6 @@ import Todoitems from "./Components/TodoItems";
 import Welcomemessage from "./Components/Welcomemessage";
 import { useState } from "react";
 function App() {
-  const initialtodoItems = [
-    {
-      name: "Go to college",
-      duedate: "7/11/2024",
-    },
-    {
-      name: "Learn javascript",
-      duedate: "10/11/2024",
-    },
-  ];
 
   const [todoItems, setTodoItems] = useState(initialtodoItems);
   const handleNewItem = (itemName, itemDueDate) => {
